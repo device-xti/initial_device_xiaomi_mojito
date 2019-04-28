@@ -9,5 +9,8 @@ DEVICE_PATH := device/xiaomi/mojito
 # Security patch level
 VENDOR_SECURITY_PATCH := 2023-10-01
 
-# Inherit the proprietary files
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# Inherit from proprietary files
 include vendor/xiaomi/mojito/BoardConfigVendor.mk
