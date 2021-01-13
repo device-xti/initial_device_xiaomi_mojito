@@ -7,6 +7,13 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mojito/mojito-vendor.mk)
 
+# Fingerprint
+ PRODUCT_PACKAGES += \
+     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150
+ 
+ PRODUCT_COPY_FILES += \
+     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
