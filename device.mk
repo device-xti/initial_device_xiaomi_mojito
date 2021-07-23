@@ -7,6 +7,10 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mojito/mojito-vendor.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+     fs_config_files
+     
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.common@2.0-util \
