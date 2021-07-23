@@ -218,6 +218,13 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# RIL
+ PRODUCT_PACKAGES += \
+     libjson \
+     libril \
+     librilutils \
+     librmnetctl
+
 # Sensors
  PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/sensor/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
