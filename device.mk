@@ -77,6 +77,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mojito
 
+# Overlay
+PRODUCT_PACKAGES += \
+    MojitoCarrierConfig \
+    MojitoFrameworks \
+    MojitoSettingsProvider \
+    MojitoSettings \
+    MojitoSystemUI \
+    MojitoTelephony \
+    MojitoWifi
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
