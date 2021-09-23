@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     fstab.zram \
