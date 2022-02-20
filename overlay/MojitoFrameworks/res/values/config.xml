@@ -691,6 +691,9 @@
      <!--Useful if you want to improve signal reception -->
      <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
+     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.aospa.sensor.udfps</string>
+
      <!-- The list of components which should be automatically disabled for a specific device. -->
      <string-array name="config_deviceDisabledComponents" translatable="false">
          <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>

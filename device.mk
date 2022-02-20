@@ -108,7 +108,11 @@ PRODUCT_PACKAGES += \
 
 # Sensors
  PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+     $(LOCAL_PATH)/configs/sensor/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+PRODUCT_PACKAGES += \
+    libsensorndkbridge \
+    sensors.xiaomi
 
 # WiFi
 PRODUCT_PACKAGES += \
