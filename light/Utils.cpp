@@ -6,7 +6,7 @@
 
 #include "Utils.h"
 
-#define LOG_TAG "android.hardware.light-service.xiaomi"
+#define LOG_TAG "android.hardware.light-service.mojito"
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
